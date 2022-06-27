@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+    <style>
+        .container {
+            width: 800px;
+            height: 900px;
+            margin: 0 auto;
+            overflow: auto;
+            
+            background-color: antiquewhite;
+        }
+
+        .container .post {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+
+            background-color: aqua;
+        }
+
+        .container .post .user {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            position: relative;
+
+            background-color: white;
+
+        }
+
+        .container .post .user .user_profile {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin-left: 20px;
+
+            border: 1px solid;
+        }
+
+        .container .post .user_id {
+            font-size: 30px;
+            font-weight: 600;
+            margin-left: 20px;
+        }
+
+        .container .post .user .icon_3dots {
+            background-image: url("./images/3dots.png");
+            position: absolute;
+            right: 20px;
+        }
+
+        .container .post .photo {
+            width: 100%;
+            height: 600px;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .container .post .icons {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            width: 100%;
+            height: 80px;
+            position: relative;
+
+            background-color: lightblue;
+        }
+
+        .container .post .icon {
+            width: 60px;
+            height: 60px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container .post .icons .icon_heart {
+            background-image: url("./images/heart\(e\).png");
+            margin-left: 20px;
+        }
+
+        .container .post .icons .icon_heart:active {
+            background-image: url("./images/heart\(f\).png");
+        }
+
+        .container .post .icons .icon_comment {
+            background-image: url("./images/comment.png");
+            margin-left: 30px;
+
+        }
+
+        .container .post .icons .icon_share {
+            background-image: url("./images/share.png");
+            margin-left: 30px;
+        }
+
+        .container .post .icons .icon_mark {
+            background-image: url("./images/bookmark.png");
+            position: absolute;
+            right: 20px;
+        }
+
+        .container .post .desc {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            width: 100%;
+
+            background-color: lightgreen;
+        }
+
+        .container .post .desc .post_content {
+            font-size: 30px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="post">
+            <div class="user">
+                <div class="user_profile"></div>
+                <div class="user_id">ID</div>
+                <div class="icon icon_3dots"></div>
+            </div>
+            <div class="photo"></div>
+            <div class="icons">
+                <div class="icon icon_heart"></div>
+                <div class="icon icon_comment"></div>
+                <div class="icon icon_share"></div>
+                <div class="icon icon_mark"></div>
+            </div>
+            <div class="desc">
+                <div class="user_id">ID</div>
+                <div class="post_content">내용</div>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="user">
+                <div class="user_profile"></div>
+                <div class="user_id">ID</div>
+            </div>
+            <div class="photo"></div>
+            <div class="icons">
+                <div class="icon icon_heart"></div>
+                <div class="icon icon_comment"></div>
+                <div class="icon icon_share"></div>
+                <div class="icon icon_mark"></div>
+            </div>
+            <div class="desc">
+                <div class="user_id">ID</div>
+                <div class="post_content">내용</div>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="user">
+                <div class="user_profile"></div>
+                <div class="user_id">ID</div>
+            </div>
+            <div class="photo"></div>
+            <div class="icons">
+                <div class="icon icon_heart"></div>
+                <div class="icon icon_comment"></div>
+                <div class="icon icon_share"></div>
+                <div class="icon icon_mark"></div>
+            </div>
+            <div class="desc">
+                <div class="user_id">ID</div>
+                <div class="post_content">내용</div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
