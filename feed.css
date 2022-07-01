@@ -3,7 +3,6 @@
     height: 900px;
     margin: 50px auto;
     overflow: auto;
-    /* position: relative; */
 }
 
 .container > .post {
@@ -67,14 +66,19 @@
     position: relative;
 }
 
-.container > .post > div:nth-child(3) > .icon:nth-child(1) {
+.heart_empty {
     background-image: url("./images/heart\(e\).png");
     margin-left: 20px;
 }
 
-.container > .post > div:nth-child(3) > .icon:nth-child(1):active {
+.heart_full {
     background-image: url("./images/heart\(f\).png");
 }
+
+/* .container > .post > div:nth-child(3) > .icon:nth-child(1) {
+    background-image: url("./images/heart\(e\).png");
+    margin-left: 20px;
+} */
 
 .container > .post > div:nth-child(3) > .icon:nth-child(2) {
     background-image: url("./images/comment.png");
@@ -111,6 +115,7 @@
     background-image: url("./images/3.jpg");
 }
 
+
 .footer {
     display: flex;
     align-items: center;
@@ -119,7 +124,6 @@
     width: 100%;
     position: sticky;
     bottom: 0;
-    /* z-index: 1; */
     background-color: white;
 }
 
